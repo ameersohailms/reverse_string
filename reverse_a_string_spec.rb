@@ -15,10 +15,10 @@ describe   do
       rstr =  rs.reverse_string(str)
       expect(rstr.char.sort).to eq(str.char.sort)
     end
-    it "passing empty string should return empty" do
+    it "passing empty string should return no characters" do
       str = " "
       rstr =  rs.reverse_string(str)
-      expect(rstr).to eq(str)
+      expect(rstr).to eq("No characters or numbers in the string")
     end
     it "passing blank string should return string is blank" do
       str = ""
