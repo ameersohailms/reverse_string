@@ -8,7 +8,7 @@ class ReverseAString
       if string.empty? && string.length == 0
         return "String is blank" 
       end
-      if string.empty? && string.length > 0
+      if string.length > 0 && string.strip.empty? 
         return "No characters or numbers in the string" 
       end
       sl = string.length - 1
