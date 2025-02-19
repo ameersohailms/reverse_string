@@ -15,5 +15,21 @@ describe   do
       rstr =  rs.reverse_string(str)
       expect(rstr.char.sort).to eq(str.char.sort)
     end
+    it "passing empty string should return empty" do
+      str = " "
+      rstr =  rs.reverse_string(str)
+      expect(rstr).to eq(str)
+    end
+    it "passing blank string should return string is blank" do
+      str = ""
+      rstr = rs.reverse_string(str)
+      expect(rstr).to eq("String is blank")
+    end
+    it "passing null value should return you have paasse null value" do
+      str = nil
+      rstr = rs.reverse_string(str)
+      expect(rstr).to eq("You have paasse null value")
+    end
+
   end
 end
