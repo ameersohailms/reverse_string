@@ -13,7 +13,7 @@ describe   do
     it "should contain all the charcters" do
       str = "hello"
       rstr =  rs.reverse_string(str)
-      expect(rstr.char.sort).to eq(str.char.sort)
+      expect(rstr.chars.sort).to eq(str.chars.sort)
     end
     it "passing empty string should return no characters" do
       str = " "
